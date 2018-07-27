@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <script type="text/javascript">
+    function sayHello()
+    {
+    alert("Hello Rohit");
+    
+    }
+    function WriteCookie()
+            {
+               var now = new Date();
+               now.setMonth( now.getMonth() + 1 );
+               cookievalue = escape(document.myform.customer.value) + ";"
+               
+               document.cookie="name=" + cookievalue;
+               document.cookie = "expires=" + now.toUTCString() + ";"
+               document.write ("Setting Cookies : " + "name=" + cookievalue );
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+    var a,b;
+    a=55,b=52;
+    var linebrake="<hr/>";
+    
+    document.write(a==b);
+    result=a==b;
+    document.write(linebrake);
+    </script>
+    <script type="text/javascript">
+   var x=0;
+   
+   while(x<20){
+      
+       if(x==9){
+           break;//breaks out the the loop
+       }
+       x=x+1;
+       document.write(x+"<br/>");
+
+
+   }</script>
+    <input type="button" onclick="sayHello()" value="Say Hello"
+    <input type="button" onclick="sayH()" value="function";
+</body>
+</html>x

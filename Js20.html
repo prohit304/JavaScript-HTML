@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obeject Examples</title>
+    <script type="text/javascript">
+        function book(title,author){
+            this.author=author;
+            this.title=title;
+            this.addPrice=addPrice;
+           
+        }
+        function addPrice(amount){
+            this.price=amount;
+            /*function addPrice(amount)
+            {
+                with(this){
+                    price=amount;
+                    }
+            }
+            */
+        }
+        function entName(){
+            var retVal=prompt("Enter Your Name :","Name here");
+            document.write("You have Entered :"+retVal);
+        }
+        
+
+       
+        </script>
+    <title>JS20</title>
+ 
+   
+</head>
+<body>
+    <script type="text/javascript">
+        var myBook=new book("Java","James Gosling");
+        myBook.addPrice(100);
+        document.write("Book Name is : "+myBook.title+ "<br/>");
+        document.write("Author is : "+myBook.author +"<br/>");
+        document.write("Book price is :"+ myBook.price +"<br/>");
+       
+       var sine_val=Math.sin(30);
+       document.write(sine_val);
+
+        </script>
+        <hr/>
+        <form>
+            Click for entering your Name here<br/>
+            <input type="button" value="Click me" onclick="entName();"/><br/>
+            <input type="button" value="Print" onclick="window.print();"/>
+        </form>
+</body>
+</html>
